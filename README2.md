@@ -1,23 +1,15 @@
-# TropiCycloneNet
-This project includes a subset of our global TC track and intensity prediction dataset $TCN_{D}$ and the test code of our deep learning TC forecasting method $TCN_{M}$.
-
-The training code will come soon.
-
-## Introduction
-
-To show our work intuitively, we provide this code to visualize our track prediction results on the Himawari-8 satellite cloud image. (Our method can also provide the TC intensity predictions. But there is not a very suitable way to show them so this code only shows the track prediction results)
-![Sample](LINGLING.gif)
-In the above picture, the sequence of red circles depicts the actual trajectory, while the semi-transparent green area illustrates the potential trends derived from our multiple trajectory predictions. Similarly, the semi-transparent red area indicates the potential trends according to MMSTN. The sequence of green stars represents the most accurate prediction trajectory produced by our method. Additionally, the backdrop for these prediction results features the satellite cloud imagery for each tropical cyclone (TC).
+# TC-Diffuser
+This project includes the code of our deep learning TC forecasting method TC-Diffuser.
 
 ## Requirements 
-* python 3.8.5
+* python 3.8.8
 * Pytorch 1.11.0 (GPU)
 
 ## Data Preparation
 First, we need to download all the data we used in TropiCycloneNet.
 * $TCN_{D}$'s [subset](https://drive.google.com/file/d/1YJg_gjF-zqvRdNpmAWFG4bG0Akwv_r2p/view?usp=sharing)
 * Himawari-8 satellite [cloud image](https://drive.google.com/file/d/1xg6xxYxO_ASkI54C8tPyhNS1ceyrfv5b/view?usp=sharing)
-* $TCN_{M}$'s [checkpoint](https://drive.google.com/file/d/1j5r2L5Y5W81pn7nBfrZCT1BA1_qfnaay/view?usp=sharing)
+* TC-Diffuser's [checkpoint](https://drive.google.com/file/d/1j5r2L5Y5W81pn7nBfrZCT1BA1_qfnaay/view?usp=sharing)
 
 After completing the downloading, there are some files.
 As for $TCN_{D}$'s subset, it includes BST data ($Data_{1d}$), ERA5 data($Data_{2d}$), and Environment data($Env-data$). You can extract them somewhere you like.
