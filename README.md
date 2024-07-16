@@ -6,7 +6,7 @@ This project includes the code of our deep learning TC forecasting method TC-Dif
 * Pytorch 1.11.0 (GPU)
 
 ## Data Preparation
-First, we need to download all the data we used in TropiCycloneNet.
+First, we need to download all the data we used in TC-Diffuser.
 * TC-Diffuser's [processed datasets](https://pan.baidu.com/s/1b-6QAht46iqJTlo0-VAozA?pwd=TCDI)
 * TC-Diffuser's [checkpoint](https://pan.baidu.com/s/1D7YZCfRRlxYF8SWesyv0Kw?pwd=TCDI)
 
